@@ -7,6 +7,7 @@ const {app, BrowserWindow} = require('electron')
     function createWindow () {
       mainWindow = new BrowserWindow({
         autoHideMenuBar: true,
+        icon: path.join(__dirname, 'dist/practice-electron-app/browser', 'favicon.ico'),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: true,
