@@ -9,19 +9,20 @@ const {app, BrowserWindow} = require('electron')
         width: 800,
         height: 600,
         webPreferences: {
-          nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: true,
+            enableRemoteModule: false,
+            devTools: false
         }
       })
 
       mainWindow.loadURL(
         url.format({
-          pathname: path.join(__dirname, `../dist/practice-electron-app/browser/index.html`),
+          pathname: path.join(__dirname, `./dist/practice-electron-app/browser/index.html`),
           protocol: "file:",
           slashes: true
         })
       );
-      // Open the DevTools.
-      mainWindow.webContents.openDevTools()
 
       mainWindow.on('closed', function () {
         mainWindow = null

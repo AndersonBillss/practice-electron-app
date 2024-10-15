@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/practice-electron-app",
+            "outputPath": "electron/dist/practice-electron-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

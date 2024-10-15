@@ -7,8 +7,9 @@
     "build": "ng build --base-href ./",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "electron": "electron electron/main.js",
-    "electron-build": "ng build --base-href ./ && electron electron/main.js"
+    "electron": "electron electron/index.js",
+    "electron-build": "ng build --base-href ./ && electron electron/index.js",
+    "package": "ng build --base-href ./ && electron-packager electron MyApp --overwrite --platform=win32 --arch=x64 --out=dist-electron/"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,7 @@
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
     "electron": "^33.0.0",
+    "electron-packager": "^17.1.2",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
