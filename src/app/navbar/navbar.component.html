@@ -1,0 +1,25 @@
+<div class="navbar">
+    <div
+    class="button" 
+    [ngClass]="currentRoute === '/page1'?'selected':''"
+    [routerLink]="'page1'"
+    >
+        Page1
+    </div>
+
+    <div 
+    class="button" 
+    [ngClass]="currentRoute === '/page2'?'selected':''"
+    [routerLink]="'page2'"
+    >
+        page2
+    </div>
+
+    <div 
+    class="button" 
+    [ngClass]="currentRoute === '/page3'?'selected':''"
+    [routerLink]="'page3'"
+    >
+        Page3
+    </div>
+</div>
