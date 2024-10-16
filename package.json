@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "electron": "electron electron/index.js",
+    "electron-debug": "electron electron/index.js --trace-warnings",
     "electron-build": "ng build --base-href ./ && electron electron/index.js",
     "package": "ng build --base-href ./ && electron-packager electron MyApp --overwrite --platform=win32 --arch=x64 --out=dist-electron/"
   },

@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './page2.component.scss'
 })
 export class Page2Component {
+  testString = localStorage.getItem("testString")
 
 }
